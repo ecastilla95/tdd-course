@@ -18,6 +18,7 @@ class SimpleTransformation {
 }
 object SimpleTransformationOps{
   def mainTransformation(string: String):(Int, String, Double) ={
-    (-1, "", -1)
+    val array = string.split(";;")
+    (array(0).toInt, array(1), array(2).toDouble)
   }
 }
